@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy Note 9</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="./IMG/NyanCat%20icon.ico">
+    <style>
+        @keyframes fade-out {
+            0%   {opacity: 1;}
+            100% {opacity: 0;}
+            }
+        @keyframes fade-in {
+            0%  {opacity: 0;}
+            100%{opacity: 1;}
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transparentbg">
+        <div class="shell" align="center">
+            <div class="lockscreen" id="screen" style="display: none">
+                <div class="statusbar">
+                    <div class="statusbar" id="carrier">遠傳電信</div>
+                    <div class="statusbar" id="wifi"></div>
+                    <div class="statusbar" id="network"></div>
+                    <div class="statusbar" id="battery"></div>
+                </div>
+                <iframe class="clock" src="http://free.timeanddate.com/clock/i79m573j/n241/tltw8/fn6/fs48/fcfff/tct/pct/ahl/th1/ts1" frameborder="0" allowTransparency="true"></iframe>
+                <iframe class="date" src="http://free.timeanddate.com/clock/i79m573j/n241/tltw8/fn6/fs18/fcfff/tct/pct/ahl/tt1" frameborder="0" allowTransparency="true"></iframe>
+                <div class="click" align="center" onclick="unlock()">click here to unlock</div>
+            </div>
+            <div class="wallpaper" id="paper" align="center" style="display: block">
+                <div class="statusbar">
+                    <iframe class="statusbar" id="time" src="http://free.timeanddate.com/clock/i79jvx28/n241/tltw8/fn3/fs15/fcfff/tct/pct/ahl/ftb/th1/ts1" frameborder="0" allowTransparency="true"></iframe>
+                    <div class="statusbar" id="wifi"></div>
+                    <div class="statusbar" id="network"></div>
+                    <div class="statusbar" id="battery"></div>
+                </div>
+                <div align="right">
+                    <a class="widget" id="weather" href="http://www.cwb.gov.tw/" target="_blank"></a>
+                    <a class="widget" id="weather_text" href="http://www.cwb.gov.tw/" target="_blank">Sunny</a>
+                    <a class="widget" id="temp" href="http://www.cwb.gov.tw/" target="_blank">25℃</a>
+                </div>
+                <div>
+                    <a class="top_icon" id="cwb" href="http://www.cwb.gov.tw/" target="_blank"></a>
+                    <a class="top_icon" id="windy" href="https://www.windyty.com/" target="_blank"></a>
+                    <a class="top_icon" id="stellarium" href="https://stellarium.org/zh_TW/" target="_blank"></a>
+                    <a class="top_icon" id="wiki" href="https://zh.wikipedia.org/zh-tw/" target="_blank"></a>
+                    <a class="top_icon" id="gogoro" href="https://www.gogoro.com/tw/" target="_blank"></a>
+                    <a class="top_icon" id="facebook" href="https://www.facebook.com/" target="_blank"></a>
+                    <a class="top_icon" id="line" href="https://line.me/zh-hant/" target="_blank"></a>
+                    <a class="top_icon" id="twitter" href="https://twitter.com/" target="_blank"></a>
+                    <a class="top_icon" id="ceiba" href="https://ceiba.ntu.edu.tw/" target="_blank"></a>
+                    <a class="top_icon" id="notion" href="https://www.notion.so/" target="_blank"></a>
+                    <a class="top_icon" id="google" href="https://www.google.com/" target="_blank"></a>
+                    <a class="top_icon" id="youtube" href="https://www.youtube.com/" target="_blank"></a>
+                    <a class="top_icon" id="gmail" href="https://mail.google.com/" target="_blank"></a>
+                    <a class="top_icon" id="drive" href="https://drive.google.com/" target="_blank"></a>
+                    <a class="top_icon" id="maps" href="https://www.google.com/maps/" target="_blank"></a>
+                </div>
+                <div>
+                    <div class="top_icon_text" id="cwb_text">CWB</div>
+                    <div class="top_icon_text" id="windy_text">Windy</div>
+                    <div class="top_icon_text" id="stellarium_text">Stellarium</div>
+                    <div class="top_icon_text" id="wiki_text">Wikipedia</div>
+                    <div class="top_icon_text" id="gogoro_text">Gororo</div>
+                    <div class="top_icon_text" id="facebook_text">Facebook</div>
+                    <div class="top_icon_text" id="line_text">Line</div>
+                    <div class="top_icon_text" id="twitter_text">Twitter</div>
+                    <div class="top_icon_text" id="ceiba_text">Ceiba</div>
+                    <div class="top_icon_text" id="notion_text">Notion</div>
+                    <div class="top_icon_text" id="google_text">Google</div>
+                    <div class="top_icon_text" id="youtube_text">YouTube</div>
+                    <div class="top_icon_text" id="gmail_text">Gmail</div>
+                    <div class="top_icon_text" id="drive_text">Google Drive</div>
+                    <div class="top_icon_text" id="maps_text">Google Maps</div>
+                </div>
+                <div class="home_index" align="center"></div>
+                <div>
+                    <div class="bottom_icon" id="phone" title="Cannot Use"></div>
+                    <div class="bottom_icon" id="message" title="Cannot Use"></div>
+                    <a class="bottom_icon" id="contact" href="https://contacts.google.com/" target="_blank"></a>
+                    <div class="bottom_icon" id="camera" title="Cannot Use"></div>
+                    <a class="bottom_icon" id="spotify" href="https://www.spotify.com/tw/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="led"></div>
+            <div class="iris_infrared_led"></div>
+            <div class="distance_sensor"></div>
+            <div class="light_sensor"></div>
+            <div class="speaker"></div>
+            <div class="cam"></div>
+            <div class="cam_center"></div>
+            <div class="iris_cam"></div>
+            <div class="power_button" onclick="on_off()"></div>
+            <div class="power_button_intro" align="center">← Click Me</div>
+            <div class="vol_button"></div>
+            <div class="voice_assistant_button"></div>
+        </div>
+    </div>
+     <script type="text/javascript">
+        function on_off() {
+            var x = document.getElementById("paper");
+            var y = document.getElementById("screen");
+            if (x.style.display === "block") {
+                x.style.animation = "fade-out 0.5s";
+                x.style.display = "none";
+            } else {
+                if (y.style.display === "block") {
+                    y.style.animation = "fade-out 0.5s";
+                    y.style.display = "none"
+                } else {
+                    y.style.animation = "fade-in 0.5s";
+                    y.style.display = "block"
+                }
+            }
+        }
+        function unlock() {
+            var x = document.getElementById("screen");
+            var y = document.getElementById("paper");
+            x.style.animation = "fade-out 0.5s";
+            x.style.display = "none";
+            y.style.animation = "fade-in 0.5s"
+            y.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

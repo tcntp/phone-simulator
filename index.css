@@ -1,0 +1,530 @@
+html {
+    background: url('./IMG/Background.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+}
+body {
+    margin: 0 auto;
+    height: 100%;
+}
+.transparentbg {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.shell {
+    position: relative;
+    background-color: #000000;
+    margin: 0mm auto;
+    top: 10mm;
+    width: 106.96mm;
+    height: 226.66mm;
+    border-radius: 4mm;
+}
+.wallpaper {
+    position: absolute;
+    top: 9mm;
+    left: 1mm;
+    background-image: url(./IMG/Wallpaper.jpg);
+    background-size: cover;
+    width: 104.96mm;
+    height: 210mm;
+    border-radius: 3mm;
+}
+.lockscreen {
+    position: absolute;
+    top: 9mm;
+    left: 1mm;
+    background-image: url(./IMG/Lockscreen.jpg);
+    background-size: cover;
+    width: 104.96mm;
+    height: 210mm;
+    border-radius: 3mm;
+}
+.clock {
+    position: absolute;
+    top: 20mm;
+    left: 5mm;
+    height: 15mm;
+    width: 50mm;
+}
+.date {
+    position: absolute;
+    top: 35mm;
+    left: 5mm;
+    height: 10mm;
+    width: 50mm;
+}
+.click {
+    position: relative;
+    top: 180mm;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    color: white;
+}
+.click:hover {
+    cursor: pointer;
+}
+.led {
+    background-color: #00ff00;
+    position: absolute;
+    left: 15mm;
+    top: 3.5mm;
+    width: 2mm;
+    height: 2mm;
+    border-radius: 1mm;
+}
+.iris_infrared_led {
+    background-color: #000033;
+    position: absolute;
+    left: 20mm;
+    top: 2.5mm;
+    width: 4mm;
+    height: 4mm;
+    border-radius: 2mm;
+}
+.distance_sensor {
+    background-color: #222222;
+    position: absolute;
+    left: 30mm;
+    top: 3mm;
+    width: 3mm;
+    height: 3mm;
+    border-radius: 1.5mm;
+}
+.light_sensor {
+    background-color: #222222;
+    position: absolute;
+    left: 34mm;
+    top: 3.5mm;
+    width: 2mm;
+    height: 2mm;
+    border-radius: 1mm;
+}
+.speaker {
+    background-color: #333333;
+    position: absolute;
+    left: 45.98mm;
+    top: 4mm;
+    width: 15mm;
+    height: 1mm;
+    border-radius: 1mm;
+}
+.cam {
+    background-color: #222222;
+    position: absolute;
+    left: 70mm;
+    top: 2.5mm;
+    width: 4mm;
+    height: 4mm;
+    border-radius: 2mm;
+}
+.cam_center {
+    background-color: #220022;
+    position: absolute;
+    left: 71mm;
+    top: 3.5mm;
+    width: 2mm;
+    height: 2mm;
+    border-radius: 1mm;
+}
+.iris_cam {
+    background-color: #222222;
+    position: absolute;
+    left: 80mm;
+    top: 3mm;
+    width: 3mm;
+    height: 3mm;
+    border-radius: 1.5mm;
+}
+.power_button {
+    background-color: #000000;
+    position: absolute;
+    left: 105.96mm;
+    top: 65mm;
+    width: 2mm;
+    height: 15mm;
+    border-radius: 1mm;
+}
+.power_button:hover {
+    cursor: grab;
+}
+.power_button:active {
+    cursor: grabbing;
+}
+.power_button_intro {
+    background-color: black;
+    border-radius: 3mm;
+    position: absolute;
+    left: 108.46mm;
+    top: 69.5mm;
+    width: 25mm;
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+}
+.vol_button {
+    background-color: #000000;
+    position: absolute;
+    left: -1mm;
+    top: 35mm;
+    width: 2mm;
+    height: 30mm;
+    border-radius: 1mm;
+}
+.voice_assistant_button {
+    background-color: #000000;
+    position: absolute;
+    left: -1mm;
+    top: 80mm;
+    width: 2mm;
+    height: 15mm;
+    border-radius: 1mm;
+}
+.statusbar {
+    position: absolute;
+    height: 5mm;
+    width: 104.96mm;
+}
+#carrier {
+    left: 5mm;
+    width: 20mm;
+    text-align: left;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+#time {
+    left: 5mm;
+    width: 12mm;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 3mm;
+    color: white;
+}
+#wifi {
+    background-image: url("./IMG/Wifi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 3.5mm;
+    width: 4mm;
+    top: 0.5mm;
+    right: 14mm;
+}
+#network {
+    background-image: url("./IMG/Network.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 3mm;
+    width: 3mm;
+    top: 1mm;
+    right: 9mm;
+}
+#battery {
+    background-image: url("./IMG/Battery.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 3mm;
+    width: 2mm;
+    top: 1mm;
+    right: 5mm;
+}
+.widget {
+    text-decoration: none;
+}
+.widget:hover {
+    cursor: pointer;
+}
+#weather {
+    background-image: url("./IMG/Sunny icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 15mm;
+    right: 15mm;
+    height: 12mm;
+    width: 12mm;
+}
+#weather_text {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12pt;
+    position: absolute;
+    top: 15mm;
+    right: 3mm;
+    height: 6mm;
+    width: 12mm;
+}
+#temp {
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12pt;
+    position: absolute;
+    top: 21mm;
+    right: 3mm;
+    height: 6mm;
+    width: 12mm;
+}
+.home_index {
+    background-color: white;
+    position: relative;
+    top: 175mm;
+    height: 2mm;
+    width: 2mm;
+    border-radius: 1mm;
+}
+.top_icon {
+    width: 15mm;
+    height: 15mm;
+    border-radius: 5mm;
+}
+.top_icon:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+#cwb {
+    position: absolute;
+    top: 100mm;
+    left: 5mm;
+    background-image: url("./IMG/CWB icon.png");
+    background-size: cover;
+}
+#windy {
+    position: absolute;
+    top: 100mm;
+    left: 25mm;
+    background-image: url("./IMG/Windy icon.png");
+    background-size: cover;
+}
+#stellarium {
+    position: absolute;
+    top: 100mm;
+    left: 45mm;
+    background-image: url("./IMG/Stellarium icon.png");
+    background-size: cover;
+}
+#wiki {
+    position: absolute;
+    top: 100mm;
+    left: 65mm;
+    background-image: url("./IMG/Wikipedia icon.png");
+    background-size: cover;
+}
+#gogoro {
+    position: absolute;
+    top: 100mm;
+    left: 85mm;
+    background-image: url("./IMG/Gogoro icon.png");
+    background-size: cover;
+}
+#facebook {
+    position: absolute;
+    top: 125mm;
+    left: 5mm;
+    background-image: url("./IMG/Facebook icon.png");
+    background-size: cover;
+}
+#line {
+    position: absolute;
+    top: 125mm;
+    left: 25mm;
+    background-image: url("./IMG/Line icon.png");
+    background-size: cover;
+}
+#twitter {
+    position: absolute;
+    top: 125mm;
+    left: 45mm;
+    background-image: url("./IMG/Twitter icon.png");
+    background-size: cover;
+}
+#ceiba {
+    position: absolute;
+    top: 125mm;
+    left: 65mm;
+    background-image: url("./IMG/Ceiba icon.png");
+    background-size: cover;
+}
+#notion {
+    position: absolute;
+    top: 125mm;
+    left: 85mm;
+    background-image: url("./IMG/Notion icon.png");
+    background-size: cover;
+}
+#google {
+    position: absolute;
+    top: 150mm;
+    left: 5mm;
+    background-image: url("./IMG/Google icon.png");
+    background-size: cover;
+}
+#youtube {
+    position: absolute;
+    top: 150mm;
+    left: 25mm;
+    background-image: url("./IMG/YouTube icon.png");
+    background-size: cover;
+}
+#gmail {
+    position: absolute;
+    top: 150mm;
+    left: 45mm;
+    background-image: url("./IMG/Gmail icon.png");
+    background-size: cover;
+}
+#drive {
+    position: absolute;
+    top: 150mm;
+    left: 65mm;
+    background-image: url("./IMG/Google Drive icon.png");
+    background-size: cover;
+}
+#maps {
+    position: absolute;
+    top: 150mm;
+    left: 85mm;
+    background-image: url("./IMG/Google Maps icon.png");
+    background-size: cover;
+}
+.top_icon_text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    text-align: center;
+    color: white;
+    width: 15mm;
+}
+#cwb_text {
+    position: absolute;
+    left: 5mm;
+    top: 115mm;
+}
+#windy_text {
+    position: absolute;
+    left: 25mm;
+    top: 115mm;
+}
+#stellarium_text {
+    position: absolute;
+    left: 45mm;
+    top: 115mm;
+}
+#wiki_text {
+    position: absolute;
+    left: 65mm;
+    top: 115mm;
+}
+#gogoro_text {
+    position: absolute;
+    left: 85mm;
+    top: 115mm;
+}
+#facebook_text {
+    position: absolute;
+    left: 5mm;
+    top: 140mm;
+}
+#line_text {
+    position: absolute;
+    left: 25mm;
+    top: 140mm;
+}
+#twitter_text {
+    position: absolute;
+    left: 45mm;
+    top: 140mm;
+}
+#ceiba_text {
+    position: absolute;
+    left: 65mm;
+    top: 140mm;
+}
+#notion_text {
+    position: absolute;
+    left: 85mm;
+    top: 140mm;
+}
+#google_text {
+    position: absolute;
+    left: 5mm;
+    top: 165mm;
+}
+#youtube_text {
+    position: absolute;
+    left: 25mm;
+    top: 165mm;
+}
+#gmail_text {
+    position: absolute;
+    left: 45mm;
+    top: 165mm;
+}
+#drive_text {
+    position: absolute;
+    left: 65mm;
+    top: 165mm;
+}
+#maps_text {
+    position: absolute;
+    left: 85mm;
+    top: 165mm;
+}
+.bottom_icon {
+    width: 15mm;
+    height: 15mm;
+    border-radius: 5mm;
+}
+.bottom_icon:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+#phone {
+    position: absolute;
+    top: 187.5mm;
+    left: 5mm;
+    background-image: url("./IMG/Phone icon.png");
+    background-size: cover;
+}
+#phone:hover {
+    cursor: not-allowed;
+}
+#message {
+    position: absolute;
+    top: 187.5mm;
+    left: 25mm;
+    background-image: url("./IMG/Message icon.png");
+    background-size: cover;
+}
+#message:hover {
+    cursor: not-allowed;
+}
+#contact {
+    position: absolute;
+    top: 187.5mm;
+    left: 45mm;
+    background-image: url("./IMG/Contact icon.png");
+    background-size: cover;
+}
+#camera {
+    position: absolute;
+    top: 187.5mm;
+    left: 65mm;
+    background-image: url("./IMG/Camera icon.png");
+    background-size: cover;
+}
+#camera:hover {
+    cursor: not-allowed;
+}
+#spotify {
+    position: absolute;
+    top: 187.5mm;
+    left: 85mm;
+    background-image: url("./IMG/Spotify icon.jpg");
+    background-size: cover;
+}
+
+
